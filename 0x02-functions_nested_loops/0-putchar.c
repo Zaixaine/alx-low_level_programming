@@ -1,4 +1,7 @@
-#include <main.h>
+#include "main.h"
+#include <unistd.h>
+#include <stdio.h>
+
 /**
  * main - entry point
  *
@@ -6,13 +9,16 @@
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+
+	char word[8] = "_putchar";
+	int a;
+
+	for (a = 0; a < 8; a++)
+	{
+		putchar(word[a]);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
