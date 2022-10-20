@@ -2,13 +2,15 @@
 
 /**
  * print_numbers - print from 0 to 9
- * Return: Always 0
+ * Return: void
  */
 void print_numbers(void)
 {
-	int a = 0;
+	char c;
 
-	while (a < 10)
-		_putchar (a++ + 0);
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
 	_putchar('\n');
 }
