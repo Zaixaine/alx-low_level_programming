@@ -3,6 +3,7 @@
 /**
  * print_diagonal - draws a diagonal line
  * @n: numbers of '\' to be printed
+ * Return: void
  */
 void print_diagonal(int n)
 {
@@ -14,10 +15,12 @@ void print_diagonal(int n)
 	for (x = 0; x < n; x++)
 	{
 		for (y = 0; y < x; y++)
+		{
 			_putchar(' ');
+		}
 
 		_putchar('\\');
-		_putchar('\\');
+		_putchar('\n');
 	}
 }
 
